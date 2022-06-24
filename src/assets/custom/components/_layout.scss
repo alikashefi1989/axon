@@ -1,0 +1,96 @@
+.main-layout {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    .phone-view {
+        width: 320px;
+        max-width: 320px;
+        height: 100%;
+        max-height: 100%;
+        border-left: 10px solid black;
+        border-right: 10px solid black;
+        border-radius: 40px;
+        padding: 70px 0px 70px;
+        position: relative;
+        .phone-top {
+            position: absolute;
+            top: 0;
+            left: -10px;
+            width: 320px;
+            height: 70px;
+            background-color: black;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .speaker {
+                width: 60px;
+                height: 10px;
+                background-color: rgb(60, 60, 60);
+                border-radius: 4px;
+                position: relative;
+                .camera {
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50px;
+                    background-color: rgb(213, 213, 213);
+                    right: 70px;
+                }
+            }
+        }
+        .inner-view {
+            width: 301px;
+            max-width: 301px;
+            height: 100%;
+            max-height: 100%;
+            padding-top: 16px;
+            position: relative;
+            background-color: rgb(70, 70, 70);
+            .clock {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .cell-battry-info {
+                width: 100%;
+                max-width: 100%;
+                position: absolute;
+                top: -5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+        }
+        .phone-bottom {
+            position: absolute;
+            bottom: 0;
+            left: -10px;
+            width: 320px;
+            height: 70px;
+            background-color: black;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .home-button {
+                width: 50px;
+                height: 50px;
+                border: 5px solid rgb(33, 33, 33);
+                background-color: rgb(60, 60, 60);
+                border-radius: 50px;
+            }
+        }
+    }
+}
